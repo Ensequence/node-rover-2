@@ -38,10 +38,15 @@ console.log('buf2: ', buf2);
 console.log('buf3: ', buf3);
 console.log('buf4: ', buf4);
 
-var num1 = utils.byteArrayToInt(buf1, 0, 4);
-var num2 = utils.byteArrayToInt(buf2, 0, 4);
-var num3 = utils.byteArrayToInt(buf3, 0, 4);
-var num4 = utils.byteArrayToInt(buf4, 0, 4);
+// var num1 = utils.byteArrayToInt(buf1, 0, 4);
+// var num2 = utils.byteArrayToInt(buf2, 0, 4);
+// var num3 = utils.byteArrayToInt(buf3, 0, 4);
+// var num4 = utils.byteArrayToInt(buf4, 0, 4);
+
+var num1 = utils.byteArrayToInt(data, 0, 4);
+var num2 = utils.byteArrayToInt(data, 4, 4);
+var num3 = utils.byteArrayToInt(data, 8, 4);
+var num4 = utils.byteArrayToInt(data, 12, 4);
 
 console.log('num1 type: ', typeof num1);
 console.log('num1: ', num1);
@@ -68,9 +73,14 @@ console.log('left1: ', left1);
 console.log('right0: ', right0);
 console.log('right1: ', right1);
 
-left0.copy(validation, 0, 0, 4);
-left1.copy(validation, 4, 0, 4);
-right0.copy(validation, 8, 0, 4);
-right1.copy(validation, 12, 0, 4);
+validation.writeInt32LE(left[0], 0);
+validation.writeInt32LE(left[1], 4);
+validation.writeInt32LE(right[0], 8);
+validation.writeInt32LE(right[1], 12);
+
+// left0.copy(validation, 0, 0, 4);
+// left1.copy(validation, 4, 0, 4);
+// right0.copy(validation, 8, 0, 4);
+// right1.copy(validation, 12, 0, 4);
 
 console.log('final challenge: ', validation);
