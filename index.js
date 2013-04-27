@@ -2,7 +2,7 @@
  * Entry point into node-rover
  *
  * Author: Steven White
- * License: MIT
+ * License: GPL
  */
 
 // ### Dependencies
@@ -23,4 +23,4 @@ module.exports = (function () {
     return {
         connect: connect
     };
-});
+})();

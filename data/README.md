@@ -1,0 +1,1 @@
+This folder contains [tcpdump](http://www.tcpdump.org/) captures of transmissions between the Rover 2.0 and Android applications.
