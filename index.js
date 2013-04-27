@@ -6,8 +6,7 @@
  */
 
 // ### Dependencies
-var config = require('./lib/config'),
-    rover = require('./lib/rover');
+var rover = require('./lib/rover');
 
 // ### Exports
 module.exports = rover;
