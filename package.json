@@ -4,5 +4,25 @@
   "private": true,
   "dependencies": {
     "debug": "~0.7.2"
-  }
+  },
+  "readmeFilename": "README.md",
+  "description": "Implementation of tcp network protocols for the [Brokstone Rover 2.0](http://www.brookstone.com/rover-20-app-controlled-spy-tank).  Note that all rover commands require a connection to the rover wifi network, typically beginning with `ROVER`.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "gitlab:node-rover-2"
+  },
+  "keywords": [
+    "brookstone",
+    "rover",
+    "tcp",
+    "rover",
+    "2.0"
+  ],
+  "author": "Steven White",
+  "license": "GPL"
 }
