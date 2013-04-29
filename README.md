@@ -98,3 +98,10 @@ Instructs the rover to lower the camera.  Will continue until told to stop or re
 #### rover.cameraStop()
 
 Instructs the rover to stop all camera movement.
+
+#### rover.spin([direction,][duration])
+
+Instructs the rover to spin.
+
+* `direction`: [Optional] direction of spin ('clockwise' or 'counter-clockwise'), defaults to 'clockwise'
+* `duration`: [Optional] how long to continue spin
