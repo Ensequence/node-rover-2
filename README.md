@@ -47,9 +47,13 @@ Establishes connection to rover.  Requires connection to rover network.
 
 * `callback`: [Optional] function to deliver connection error
 
+___________________________________
+
 #### rover.disconnect()
 
 Closes connection with rover.  Any subsequent commands will throw an error, with the exception of `connect`.
+
+___________________________________
 
 #### rover.forwardLeft([duration])
 
@@ -57,11 +61,15 @@ Instructs the rover to move the left track forward.  Seems to persist for one se
 
 * `duration`: [Optional] ms to continue sending instruction
 
+___________________________________
+
 #### rover.forwardRight([duration])
 
 Instructs the rover to move the right track forward.  Seems to persist for one second with a single instruction.
 
 * `duration`: [Optional] ms to continue sending instruction
+
+___________________________________
 
 #### rover.reverseLeft([duration])
 
@@ -69,11 +77,15 @@ Instructs the rover to move the left track backward.  Seems to persist for one s
 
 * `duration`: [Optional] ms to continue sending instruction
 
+___________________________________
+
 #### rover.reverseRight([duration])
 
 Instructs the rover to move the right track backward.  Seems to persist for one second with a single instruction.
 
 * `duration`: [Optional] ms to continue sending instruction
+
+___________________________________
 
 #### rover.forward([duration])
 
@@ -81,23 +93,33 @@ Instructs the rover to move both tracks forward.  Seems to persist for one secon
 
 * `duration`: [Optional] ms to continue sending instruction
 
+___________________________________
+
 #### rover.reverse([duration])
 
 Instructs the rover to move both tracks backward.  Seems to persist for one second with a single instruction.
 
 * `duration`: [Optional] ms to continue sending instruction
 
+___________________________________
+
 #### rover.cameraUp()
 
 Instructs the rover to raise the camera.  Will continue until told to stop or reaches highest point.
+
+___________________________________
 
 #### rover.cameraDown()
 
 Instructs the rover to lower the camera.  Will continue until told to stop or reaches lowest point.
 
+___________________________________
+
 #### rover.cameraStop()
 
 Instructs the rover to stop all camera movement.
+
+___________________________________
 
 #### rover.spin([direction,][duration])
 
