@@ -1,5 +1,5 @@
 {
-  "name": "node-rover-2",
+  "name": "rover-2",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -24,5 +24,15 @@
     "2.0"
   ],
   "author": "Steven White",
+  "contributors" : [
+    {
+      "name" : "Steven White",
+      "email" : "swhitewvu24@gmail.com"
+    },
+    {
+      "name" : "John Weis",
+      "email" : "weis.john@gmail.com"
+    }
+  ],
   "license": "GPL"
 }

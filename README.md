@@ -1,24 +1,50 @@
-# node-rover-2
+# rover-2
 
-Implementation of tcp network protocols for the [Brokstone Rover 2.0](http://www.brookstone.com/rover-20-app-controlled-spy-tank).  Note that all rover commands require a connection to the rover wifi network, typically beginning with `ROVER`.
+Implementation of TCP network protocols for the [Brokstone Rover 2.0](http://www.brookstone.com/rover-20-app-controlled-spy-tank).  Note that all rover commands require a connection to the rover wifi network, typically beginning with `ROVER`.
 
-Attempts to expose all functionality of the rover with an easy to use API.  Still under heavy development.
+Attempts to expose all functionality of the rover with an easy to use API.
+
+> This module is still under heavy development. Pull-requests are welcome.
+
 
 ## Installation
 
 Install via git:
 
 ```bash
-$ npm install git+ssh://gitlab:node-rover-2
+$ npm install rover-2
 ```
 
-## Repl
 
-`node-rover-2` exposes a `repl.js` file for testing.  Currently the exposed locals include:
+## REPL
+
+`rover-2` exposes a `repl.js` file for testing.  Currently the exposed locals include:
 
 * `rover`: outward facing api object
 * `utils`: byte utility functions
 * `blow`: blowfish implementation
+
+
+For example:
+
+```
+$ ./repl.js 
+rover> rover
+{ connect: [Function: connect],
+  disconnect: [Function: disconnect],
+  forwardLeft: [Function: forwardLeft],
+  forwardRight: [Function: forwardRight],
+  reverseLeft: [Function: reverseLeft],
+  reverseRight: [Function: reverseRight],
+  forward: [Function: forward],
+  reverse: [Function: reverse],
+  cameraUp: [Function: cameraUp],
+  cameraDown: [Function: cameraDown],
+  cameraStop: [Function: cameraStop],
+  spin: [Function: spin] }
+```
+
+
 
 ## Usage
 
@@ -26,7 +52,7 @@ Require and go:
 
 ```javascript
 // Require rover
-var rover = require('node-rover-2');
+var rover = require('rover-2');
 
 // Establish connection
 rover.connect(function (err) {

@@ -2,9 +2,9 @@
 
 // create a local REPL to speed up development on usersaurus
 
-var util = require('./util')
-  , blowfish = require('./connect/blowfish')
-  , rover = require('./rover')
+var util = require('./lib/util')
+  , blowfish = require('./lib/connect/blowfish')
+  , rover = require('./lib/rover')
   , repl = require("repl")
   ;
 
