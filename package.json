@@ -1,12 +1,13 @@
 {
   "name": "rover-2",
+  "description": "A node.js client for controlling the Brookstone Rover 2.0",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "dependencies": {
     "debug": "~0.7.2"
   },
   "readmeFilename": "README.md",
-  "description": "Implementation of tcp network protocols for the [Brokstone Rover 2.0](http://www.brookstone.com/rover-20-app-controlled-spy-tank).  Note that all rover commands require a connection to the rover wifi network, typically beginning with `ROVER`.",
+
   "main": "index.js",
   "directories": {
     "test": "test"
