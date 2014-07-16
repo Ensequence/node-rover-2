@@ -4,10 +4,10 @@
   "version": "0.0.2",
   "private": false,
   "dependencies": {
-    "debug": "~0.7.2"
+    "debug": "~0.7.2",
+    "request": "~2.37.0"
   },
   "readmeFilename": "README.md",
-
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -25,14 +25,14 @@
     "2.0"
   ],
   "author": "Steven White",
-  "contributors" : [
+  "contributors": [
     {
-      "name" : "Steven White",
-      "email" : "swhitewvu24@gmail.com"
+      "name": "Steven White",
+      "email": "swhitewvu24@gmail.com"
     },
     {
-      "name" : "John Weis",
-      "email" : "weis.john@gmail.com"
+      "name": "John Weis",
+      "email": "weis.john@gmail.com"
     }
   ],
   "license": "GPL"
