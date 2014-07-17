@@ -113,6 +113,18 @@ Instructs the rover to move the right track backward.  Seems to persist for one 
 
 ___________________________________
 
+#### rover.stopLeft()
+
+Instructs the rover to stop left track movement.
+
+___________________________________
+
+#### rover.stopRight()
+
+Instructs the rover to stop right track movement.
+
+___________________________________
+
 #### rover.forward([duration])
 
 Instructs the rover to move both tracks forward.  Seems to persist for one second with a single instruction.
@@ -126,6 +138,12 @@ ___________________________________
 Instructs the rover to move both tracks backward.  Seems to persist for one second with a single instruction.
 
 * `duration`: [Optional] ms to continue sending instruction
+
+___________________________________
+
+#### rover.stop()
+
+Instructs the rover to stop all track movement.
 
 ___________________________________
 
