@@ -44,8 +44,6 @@ rover> rover
   spin: [Function: spin] }
 ```
 
-
-
 ## Usage
 
 Require and go:
