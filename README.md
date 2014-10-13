@@ -52,15 +52,28 @@ Require and go:
 // Require rover
 var rover = require('rover-2');
 
-// Establish connection
-rover.connect(function (err) {
-    // Check if there was an error establishing connection
-    if (err) return console.log('Connect error: ', err);
+// Establish connection, then send some commands
+rover.connect()
+    .then(function () {
+        console.log('sending forward');
+        return rover.forward(1000);
+    })
+    .then(function () {
+        console.log('stopping');
+        return rover.stop();
+    })
+    .then(function () {
+        console.log('sending reverse');
+        return rover.reverse(1000);
+    })
+    .then(function () {
+        console.log('spinning');
+        return rover.spin('clockwise', 1000);
+    })
+    .catch(function (err) {
+        console.log('failed: ', err);
+    });
 
-    // Move around
-    rover.forward(1000);
-    rover.reverse(1500);
-});
 ```
 
 ## API
