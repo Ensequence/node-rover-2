@@ -1,11 +1,12 @@
 {
   "name": "rover-2",
   "description": "A node.js client for controlling the Brookstone Rover 2.0",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "dependencies": {
     "debug": "~0.7.2",
-    "request": "~2.37.0"
+    "request": "~2.37.0",
+    "q": "~1.0.1"
   },
   "readmeFilename": "README.md",
   "main": "index.js",
