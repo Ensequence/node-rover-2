@@ -1,5 +1,7 @@
 # rover-2
 
+[![NPM version](https://badge.fury.io/js/rover-2.svg)](http://badge.fury.io/js/rover-2)
+
 Implementation of TCP network protocols for the [Brokstone Rover 2.0](http://www.brookstone.com/rover-20-app-controlled-spy-tank).  Note that all rover commands require a connection to the rover wifi network, typically beginning with `ROVER`.
 
 Attempts to expose all functionality of the rover with an easy to use API.
